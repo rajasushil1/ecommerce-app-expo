@@ -5,7 +5,7 @@ export default class Home extends Component {
   render() {
     return (
      <SafeAreaView className="flex-1" edges={['top']}>
-      <Header showMenu showCart showLogo />
+      <Header title="Forever" showMenu showCart showLogo />
      </SafeAreaView>
     )   
   }

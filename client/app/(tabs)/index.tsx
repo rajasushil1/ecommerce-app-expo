@@ -1,12 +1,12 @@
-import { Text, View } from 'react-native'
+import Header from '@/components/Header'
 import React, { Component } from 'react'
-
+import { SafeAreaView } from 'react-native-safe-area-context'
 export default class Home extends Component {
   render() {
     return (
-      <View>
-        <Text>Home</Text>
-      </View>
-    )
+     <SafeAreaView className="flex-1" edges={['top']}>
+      <Header showMenu showCart showLogo />
+     </SafeAreaView>
+    )   
   }
 }

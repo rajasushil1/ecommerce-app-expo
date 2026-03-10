@@ -1,9 +1,23 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./App.{js,jsx,ts,tsx}", "./**/*.{js,ts,jsx,tsx}"],
+  content: [
+    "./app/**/*.{js,jsx,ts,tsx}",
+    "./components/**/*.{js,jsx,ts,tsx}",
+    "./assets/**/*.{js,jsx,ts,tsx}",
+  ],
   presets: [require("nativewind/preset")],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#111111",
+        secondary: "#666666",
+        background: "#FFFFFF",
+        surface: "#F7F7F7",
+        accent: "#FF4C3B",
+        border: "#EEEEEE",
+        error: "#FF4444",
+      },
+    },
   },
   plugins: [],
-}
+};

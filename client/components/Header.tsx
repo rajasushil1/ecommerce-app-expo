@@ -6,8 +6,6 @@ import { Ionicons } from "@expo/vector-icons";
 import { COLORS } from "@/constants";
 import { Image } from "expo-image";
 
-
-
 export default function Header({
   title,
   showBack,
